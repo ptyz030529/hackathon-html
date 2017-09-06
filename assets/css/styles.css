@@ -1,0 +1,225 @@
+/** Core **/
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+body{
+  font-family: Roboto, Noto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #FFF;
+  color: #526069;
+  line-height: 1.2em;
+  font-size: 16px;
+}
+section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.section-title{
+  font-size: 2rem;
+  margin: 20px 0;
+  border-bottom: 4px solid #279566;
+  padding: 10px;
+  display: inline-block;
+}
+/** UI **/
+.btn{
+  border-radius: 0px;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #279566;
+  border-color: #279566;
+}
+
+/** Section Main **/
+#main{
+  background: black url(https://static.segmentfault.com/v-59883fff/app/hackathon-2015/bg.jpg) 50% 50%;
+  background-size: cover;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFF;
+}
+#main h1{
+  text-transform: uppercase;
+  line-height: 100%;
+  margin-bottom: 40px;
+  font-size: 7vw;
+  font-weight:bold;
+}
+#main h1 span{
+  color: #279566;
+}
+#main p{
+  font-size: 3vw;
+}
+
+/** Section Desc **/
+#desc img{
+  width:100%;
+  max-width: 150px;
+}
+#desc h3{
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: left;
+  color: #279566;
+  font-weight: bold;
+}
+#desc .action{
+  text-align: left;
+}
+#desc .btn{
+  margin-right: 20px;
+}
+#desc p{
+  text-align: left;
+}
+
+/** Section Timeline **/
+#timeline{
+  background: #eeeeee;
+}
+
+.timeline{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.timeline li{
+  display: flex;
+}
+.timeline time{
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #757575;
+}
+.timeline span{
+  width: 140px;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.timeline .dot{
+  flex: 0 0 auto;
+  width: 60px;
+  display: flex;
+  min-height: 150px;
+  position: relative;
+}
+.timeline .dot:before{
+  content: "";
+  width: 8px;
+  height: 100%;
+  background: #279566;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.timeline .dot:after{
+  content: "";
+  border: 4px solid #279566;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: #eeeeee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.timeline .content{
+  flex: 0 1 100%;
+  background: #46be8a;
+  color: #fff;
+  margin: 10px 40px;
+  padding: 20px;
+  text-align: left;
+  overflow: hidden;
+}
+.timeline img{
+  float: left;
+  max-width: 180px;
+  margin-right: 20px;
+}
+.timeline h4{
+  margin-left:0;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.timeline .fourth h4{
+  font-size: 26px;
+  text-align: center;
+}
+.timeline .fourth p{
+  font-size: 26px;
+  text-align: center;
+}
+@media (max-width: 991px) { 
+  .timeline .content{
+    text-align:center;
+  }
+  .timeline img{
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .timeline li{
+    display: block;
+  }
+  .timeline .dot{
+    display: none;
+  }
+  .timeline time{
+    display: block;
+    margin: 20px 0;
+    text-align: left;
+  }
+  .timeline .content{
+    margin:20px 0;
+  }
+  .timeline img{
+    float: left;
+    max-width: 180px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  .timeline h4,
+  .timeline p{
+    text-align: left;
+  }
+}
+@media (max-width: 575px) {
+  .timeline time{
+    text-align: center;
+  }
+  .timeline img{
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .timeline h4,
+  .timeline p{
+    text-align: center;
+  } 
+}
+/** Stuff **/

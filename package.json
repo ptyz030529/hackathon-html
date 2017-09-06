@@ -1,0 +1,26 @@
+{
+  "name": "hackthon-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptyz030529/hackthon-html.git"
+  },
+  "keywords": [
+    "html"
+  ],
+  "author": "JimbaChen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ptyz030529/hackthon-html/issues"
+  },
+  "homepage": "https://github.com/ptyz030529/hackthon-html#readme",
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "jquery": "^3.2.1"
+  }
+}
