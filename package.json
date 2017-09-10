@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "postcss --use autoprefixer -o assets/src/styles.css src/css/*.css"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,12 @@
     "jquery": "^3.2.1",
     "masonry-layout": "^4.2.0",
     "popper.js": "^1.12.5",
-    "slick-carousel": "^1.7.1"
+    "slick-carousel": "^1.7.1",
+    "wow.js": "^1.2.2"
+  },
+  "devDependencies": {
+    "postcss": "*",
+    "postcss-cli": "*",
+    "autoprefixer": "^7.1.4"
   }
 }

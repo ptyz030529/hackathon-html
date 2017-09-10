@@ -32,5 +32,10 @@
     itemSelector: 'img',
     gutter: 20
   })
-  
+
+  var WOW = window.WOW
+  var wow = new WOW({
+    scrollContainer: 'body'
+  })
+  wow.init()
 })(jQuery, window, document)
