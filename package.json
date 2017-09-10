@@ -20,9 +20,12 @@
   },
   "homepage": "https://github.com/ptyz030529/hackthon-html#readme",
   "dependencies": {
+    "animate.css": "^3.5.2",
     "bootstrap": "4.0.0-beta",
     "font-awesome": "^4.7.0",
+    "isotope-packery": "^2.0.0",
     "jquery": "^3.2.1",
+    "masonry-layout": "^4.2.0",
     "popper.js": "^1.12.5",
     "slick-carousel": "^1.7.1"
   }
